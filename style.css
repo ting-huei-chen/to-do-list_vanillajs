@@ -45,6 +45,7 @@ button:hover,input[type=submit]:hover{
 }
 #sticker{
     min-height: 12rem;
+    padding-left: 0;
 }
 .item, .add{
     display: flex;

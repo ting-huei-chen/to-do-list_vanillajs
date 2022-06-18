@@ -5,7 +5,7 @@ var sticker = document.getElementById("sticker");
 loadEvents();
 
 function createElem(val) {
-    let elem = document.createElement("div");
+    let elem = document.createElement("li");
     let del = document.createElement("input");
     del.type = "checkbox";
     let intext = document.createElement("p");
