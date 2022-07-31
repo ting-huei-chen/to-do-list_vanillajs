@@ -6,34 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do list</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e2110d24a9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <h1>To-do List</h1>
     </header>
     <main>
-      <ul id="sticker">
-        <li class="item">
-          <p class="crossed">Coding challenge</p>
-          <input type="checkbox" class="del" checked />
-        </li>
-        <li class="item">
-          <p class="crossed">Feed my dog</p>
-          <input type="checkbox" class="del" checked />
-        </li>
-      </ul>
-      <div class="add">
-        <input
-          type="text"
-          name="todo"
-          id="todo"
-          required
-          placeholder="Enter new task..."
-        />
-        <input type="submit" id="addbtn" value="+" />
-        <button id="clearbtn">Clear Done</button>
+      <div class="note">
+        <ul id="sticker" class="elemList">
+          <li class="item">
+            <p class="crossed">Coding challenge</p>
+            <input type="checkbox" class="del" checked />
+          </li>
+          <li class="item">
+            <p class="crossed">Feed my dog</p>
+            <input type="checkbox" class="del" checked />
+          </li>
+        </ul>
+        <div class="add">
+          <input
+            type="text"
+            name="todo"
+            id="todo"
+            required
+            placeholder="Enter new task..."
+          />
+          <input type="submit" id="addbtn" value="+" />
+          <button id="clearbtn">Clear Done</button>
+        </div>
       </div>
     </main>
+    <button id="newNote"><i class="fa-solid fa-circle-plus"></i></button>
     <script src="script.js"></script>
   </body>
 </html>

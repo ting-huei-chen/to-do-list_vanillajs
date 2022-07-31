@@ -1,7 +1,8 @@
 var addbtn = document.getElementById("addbtn");
+var field = document.querySelector("main");
 var clearbtn = document.getElementById("clearbtn");
 var sticker = document.getElementById("sticker");
-
+var newNote = document.getElementById("newNote");
 loadEvents();
 
 function createElem(val) {
@@ -48,3 +49,28 @@ function loadEvents(){
         todo.value = "";
     });
 }
+
+function createNote(){
+    let note = document.createElement("div");
+    let addSec = document.createElement("div");
+    let elemList = document.createElement("ul");
+    note.classList.add("note");
+    addSec.classList.add("add");
+    elemList.classList.add("elemList");
+    let inputText = document.createElement("input");
+    let inputSubmit = document.createElement("input");
+    inputText.type="text";
+    inputSubmit.type="submit";
+    let clearbtn = document.createElement("button");
+    clearbtn.innerHTML="Clear Done";
+    inputSubmit.value="+";
+    console.log(inputText);
+    inputText.setAttribute("placeholder","Enter new task...");
+    addSec.append(inputText,inputSubmit,clearbtn)
+    note.append(elemList,addSec);
+    field.appendChild(note);
+}
+
+newNote.addEventListener("click",()=>{
+    createNote();
+})

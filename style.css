@@ -10,6 +10,11 @@ header{
     text-align: center;
 }
 main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.note{
     padding: 3rem 0 2rem 0;
     width: 100%;
     max-width: 60ch;
@@ -17,6 +22,7 @@ main{
     background-color: #f5eb5b;
     border-radius: 10px;
     overflow: hidden;
+    
 }
 p{
     width: 80%;
@@ -43,7 +49,7 @@ button,input[type=submit]{
 button:hover,input[type=submit]:hover{
     color: #ff3c00;
 }
-#sticker{
+.elemList{
     min-height: 12rem;
     padding-left: 0;
 }
