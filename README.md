@@ -1,6 +1,10 @@
-# To-do List - Using JavaScript
+# To-do List - Using Plain JavaScript
 
 This is a simple to-do list using plain Javascript.
+
+## Update
+
+🆕Users are able to create new list
 
 ## Table of contents
 
@@ -23,6 +27,7 @@ Users are able to:
 - Add new tasks
 - Tick out tasks
 - Clear all the ticked tasks
+- Create new list
 
 ### Links
 
@@ -96,8 +101,9 @@ function tick(e) {
 
 ### Continued development
 
-- Use cookies to store the data
-- Add the ability to create new list
+- Use cookies to store the task
+- Change the color of lists
+- Ability to re-order the list
 
 ### Useful resources
 
